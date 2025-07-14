@@ -9,8 +9,8 @@
   
 ## Ideia do Projeto
 
--**Gameplay:** A ideia do projeto é ser um jogo de rpg simples com gameplay baseada em derrotar hordas de inimigos.
--**História:** A história conta sobre a indignação de um povo sobre um mal que se espalha sobre a ilha em que eles vivem e se juntam para combater esse mal.
+- **Gameplay:** A ideia do projeto é ser um jogo de rpg simples com gameplay baseada em derrotar hordas de inimigos.
+- **História:** A história conta sobre a indignação de um povo sobre um mal que se espalha sobre a ilha em que eles vivem e se juntam para combater esse mal.
 
 ## Desenvolvimento
 
@@ -23,4 +23,25 @@ O Godot utiliza uma linguagem de programação tão simples quanto python chamad
 
 Os assets são desenhados usando o software [Pixel Studio](https://store.steampowered.com/app/1204050/Pixel_Studio__o_melhor_editor_de_arte_pixel), um editor de pixel art para artistas e desenvolvedores de jogos.
 
+#### Exemplos
+
+- **Depositos de Almas:**
+
+![estatuaA](/exemplos/estatuaA.png)    ![estatuaB](/exemplos/estatuaB.png)
+
+- **Interface:**
+
+![Interface](/exemplos/interface.png)
+
+- **Mago:**
+
+![mago](/exemplos/mago.png)
+
+- **Slimes:**
+
+![Slimes](/exemplos/slimes.png)
+
+- **Terreno:**
+
+![terreno](/exemplos/terreno.png)
 
