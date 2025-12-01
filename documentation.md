@@ -33,3 +33,35 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
   - Justificativa:
     - Go: Afinidade com a linguagem, alem de ser rápida e eficaz.
     - Firebase: Banco de dados NOSQL é mais adequado para lidar com os dados dos jogadores.
+
+## Mapa de Telas
+### Web
+- **Tela 1:** Pagina Inicial.
+  - **Objetivo:** Apresentar o projeto ao usuário.
+  - **Elementos:**
+    - Apresentação do jogo.
+    - Botão "Jogar Agora!".
+  - **Ações:**
+    - Clicar "Jogar Agora!" → Redireciona para a pagina do jogo.
+   
+- **Tela 2:** Pagina Interativa.
+  - **Objetivo:** Jogar e baixar o jogo e conversar com os outros jogadores.
+  - **Elementos:**
+    - Jogo na versão web.
+    - Botão "Baixe agora".
+    - Chat geral.
+    - Botão "Ver Ranking".
+  - **Ações:**
+    - Jogar o jogo na versão web.
+    - Clicar "Baixe agora" → Baixa o APK do jogo para dispositivos Android (não disponivel para dispositivos IOS).
+    - Conversar no chat geral.
+    - Clicar "Ver Ranking" → Redireciona para a pagina do ranking.
+
+- **Tela 3:** Pagina do Ranking.
+  - **Objetivo:** Mostrar a tabela de ranking do modo de hordas infinitas.
+  - **Elementos:**
+    - Tabela de ranking.
+  - **Ações:**
+    - Ver tabela de ranking.
+
+### Aplicativo
