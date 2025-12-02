@@ -31,7 +31,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
   - Linguagem: Go.
   - Banco de Dados: [Firebase](https://firebase.google.com/).
   - Justificativa:
-    - Go: Afinidade com a linguagem, alem de ser rápida e eficaz.
+    - Go: Afinidade com a linguagem, além de ser rápida e eficaz.
     - Firebase: Banco de dados NOSQL é mais adequado para lidar com os dados dos jogadores.
 
 ## Mapa de Telas
