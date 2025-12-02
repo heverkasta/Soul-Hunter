@@ -12,10 +12,10 @@
   
 ## Apresentação do Projeto
 
-O projeto Soul Hunter consiste em um jogo JvA (jogador versus ambiente) com mecanicas simples de práticas com dois modos de jogo.
-O primeiro é um modo história, onde o jogador avançará por fazes, derrotando inimigos e desbloqeando partes da história.
+O projeto Soul Hunter consiste em um jogo JvA (jogador versus ambiente) com mecânicas simples de práticas com dois modos de jogo.
+O primeiro é um modo história, onde o jogador avançará por fases, derrotando inimigos e desbloqueando partes da história.
 O segundo modo tem como objetivo derrotar e sobreviver a hordas infinitas de inimigos, buscando conseguir a maior pontuação possível do ranking.
-A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na web, sem a necesidade de instalar, além de conter um chat em tempo real para que os jogadores conversem entre si e uma tabela de ranking para o modo de hordas infinitas.
+A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na web, sem a necessidade de instalar, além de conter um chat em tempo real para que os jogadores conversem entre si e uma tabela de ranking para o modo de hordas infinitas.
 
 ## Stack Tecnológica
 
@@ -24,8 +24,8 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
   - Justificativa: Simples, prático e funcional.
 
 - **Versão Mobile (Nativo):**
-  - Linguagem: GDScript (linguagem propria do motor grafico [Godot Engine](https://godotengine.org), no qual o projeto será desenvolvido).
-  - Justificativa: O [Godot Engine](https://godotengine.org) é um motor grafico de código aberto com diversas ferramentas que facilitam o desenvolvimento de jogos, principalmente mobile.
+  - Linguagem: GDScript (linguagem própria do motor gráfico [Godot Engine](https://godotengine.org), no qual o projeto será desenvolvido).
+  - Justificativa: O [Godot Engine](https://godotengine.org) é um motor gráfico de código aberto com diversas ferramentas que facilitam o desenvolvimento de jogos, principalmente mobile.
 
 - **Back-end:**
   - Linguagem: Go.
@@ -36,15 +36,15 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
 
 ## Mapa de Telas
 ### Web
-- **Tela 1:** Pagina Inicial.
+- **Tela 1:** Página Inicial.
   - **Objetivo:** Apresentar o projeto ao usuário.
   - **Elementos:**
     - Apresentação do jogo.
     - Botão "Jogar Agora!".
   - **Ações:**
-    - Clicar "Jogar Agora!" → Redireciona para a pagina do jogo.
+    - Clicar "Jogar Agora!" → Redireciona para a página do jogo.
   <br>  
-- **Tela 2:** Pagina Interativa.
+- **Tela 2:** Página Interativa.
   - **Objetivo:** Jogar e baixar o jogo e conversar com os outros jogadores.
   - **Elementos:**
     - Jogo na versão web.
@@ -53,11 +53,11 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
     - Botão "Ver Ranking".
   - **Ações:**
     - Jogar o jogo na versão web.
-    - Clicar "Baixe agora" → Baixa o APK do jogo para dispositivos Android (não disponivel para dispositivos IOS).
+    - Clicar "Baixe agora" → Baixa o APK do jogo para dispositivos Android (não disponível para dispositivos IOS).
     - Conversar no chat geral.
-    - Clicar "Ver Ranking" → Redireciona para a pagina do ranking.
+    - Clicar "Ver Ranking" → Redireciona para a página do ranking.
   <br>  
-- **Tela 3:** Pagina do Ranking.
+- **Tela 3:** Página do Ranking.
   - **Objetivo:** Mostrar a tabela de ranking do modo de hordas infinitas.
   - **Elementos:**
     - Tabela de ranking.
@@ -70,7 +70,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
 - **Tela 1:** Tela Inicial.
   - **Objetivo:** Dar início ao jogo.
   - **Elementos:**
-    - Titulo do jogo.
+    - Título do jogo.
     - Botão "Jogar Demo".
     - Botão "Arcade".
   - **Ações:**
@@ -86,7 +86,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
     - Botão "Começar"
   - **Ações:**
     - Clicar no personagem desejado → Seleciona o personagem desejado.
-    - Clicar "Começar" → Redireciona para jogo.   
+    - Clicar "Começar" → Redireciona para o jogo.   
    
   <br>  
   
@@ -121,7 +121,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
   - Salvamento do progresso dos jogadores no servidor.
 
 ## Assets
-- **Depositos de Almas:**
+- **Depósitos de Almas:**
 
 ![estatuaA](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/estatuaA.png?raw=true)    ![estatuaB](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/estatuaB.png?raw=true)
 
