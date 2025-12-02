@@ -5,10 +5,10 @@
 - **Nome do Projeto:** Soul Hunter
   - **Porque este nome:** Este nome busca ser claro e objetivo com a proposta do jogo, onde o jogador terá como meta caçar as almas dos monstros que ameaçam a ilha em que o jogo se passa.
 - **Membros:**
-  - [Carlos Daniel Silva](https://github.com/CarlosDaniel-Droid)
-  - [Heverton Renee Alves Silva](https://github.com/heverkasta)
-  - [João Geraldo Santos Xavier](https://github.com/JoaoGeraldoS)
-  - [Phelipe Gabriel Santos da Silva](https://github.com/niltz-dev)
+  - [Carlos Daniel Silva](https://github.com/CarlosDaniel-Droid) (Back-end e Game-Dev).
+  - [Heverton Renee Alves Silva](https://github.com/heverkasta) (Game-Dev).
+  - [João Geraldo Santos Xavier](https://github.com/JoaoGeraldoS) (Front-end e Back-end).
+  - [Phelipe Gabriel Santos da Silva](https://github.com/niltz-dev) (Designer).
   
 ## Apresentação do Projeto
 
@@ -29,7 +29,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
 
 - **Back-end:**
   - Linguagem: Go.
-  - Banco de Dados: Firebase.
+  - Banco de Dados: [Firebase](https://firebase.google.com/).
   - Justificativa:
     - Go: Afinidade com a linguagem, alem de ser rápida e eficaz.
     - Firebase: Banco de dados NOSQL é mais adequado para lidar com os dados dos jogadores.
@@ -43,7 +43,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
     - Botão "Jogar Agora!".
   - **Ações:**
     - Clicar "Jogar Agora!" → Redireciona para a pagina do jogo.
-   
+  <br>  
 - **Tela 2:** Pagina Interativa.
   - **Objetivo:** Jogar e baixar o jogo e conversar com os outros jogadores.
   - **Elementos:**
@@ -56,7 +56,7 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
     - Clicar "Baixe agora" → Baixa o APK do jogo para dispositivos Android (não disponivel para dispositivos IOS).
     - Conversar no chat geral.
     - Clicar "Ver Ranking" → Redireciona para a pagina do ranking.
-
+  <br>  
 - **Tela 3:** Pagina do Ranking.
   - **Objetivo:** Mostrar a tabela de ranking do modo de hordas infinitas.
   - **Elementos:**
@@ -64,4 +64,88 @@ A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na w
   - **Ações:**
     - Ver tabela de ranking.
 
+  <br>  
+
 ### Aplicativo
+- **Tela 1:** Tela Inicial.
+  - **Objetivo:** Dar início ao jogo.
+  - **Elementos:**
+    - Titulo do jogo.
+    - Botão "Jogar Demo".
+    - Botão "Arcade".
+  - **Ações:**
+    - Clicar "Jogar Demo" → Redireciona para a tela de seleção de personagem.
+    - Clicar "Arcade" → Redireciona para a tela de seleção de personagem.
+   
+  <br>  
+  
+- **Tela 2:** Tela de Seleção de Personagem.
+  - **Objetivo:** Escolher Personagens.
+  - **Elementos:**
+    - Botões para cada personagem jogável
+    - Botão "Começar"
+  - **Ações:**
+    - Clicar no personagem desejado → Seleciona o personagem desejado.
+    - Clicar "Começar" → Redireciona para jogo.   
+   
+  <br>  
+  
+- **Tela 3:** Tela do Jogo.
+  - **Objetivo:** Jogar.
+  - **Elementos:**
+    - Analógicos direcionais para controlar o movimento e ataques do personagem.
+    - Barras de vida, de energia e de almas.
+    - Botão de pausar o jogo
+  - **Ações:**
+    - Controlar o personagem.
+    - Pausar jogo
+   
+  <br>  
+
+## Fluxograma de Navegação
+### Web
+Página Inicial → Página Interativa → Página de Ranking.
+### Aplicativo
+Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
+
+## Funcionalidades
+- **ESSENCIAIS:**
+  - Demonstração do modo história.
+  - Modo Arcade (hordas infinitas).
+
+- **IMPORTANTES:**
+  - Chat da comunidade.
+  - Tabela de ranking.
+
+- **DESEJÁVEIS:**
+  - Salvamento do progresso dos jogadores no servidor.
+
+## Assets
+- **Depositos de Almas:**
+
+![estatuaA](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/estatuaA.png?raw=true)    ![estatuaB](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/estatuaB.png?raw=true)
+
+- **Interface:**
+
+![Interface](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/interface.png?raw=true)
+
+- **Arqueira:**
+
+![Arqueira](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/archer.png?raw=true)
+
+- **Slimes:**
+
+![Slimes](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/slimes.png?raw=true)
+
+- **Terreno:**
+
+![terreno](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/terreno.png?raw=true)
+
+### Cronograma de Desenvolvimento
+| Período | Atividade | Responsável |
+|---------|-----------|-------------|
+| 03/12 - 16/12 | Desenvolvimento telas Web | Front-end |
+| 03/12 - 14/12 | Configuração do Banco de Dados | Back-end |
+| 17/12 - 15/01 | Desenvolvimento da API | Back-end |
+| 03/12 - 25/01 | Desenvolvimento dos Assets | Designer |
+| 03/12 - 01/02 | Desenvolvimento do Jogo | Game-Dev |
