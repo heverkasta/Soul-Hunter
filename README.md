@@ -141,7 +141,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 
 ![terreno](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/terreno.png?raw=true)
 
-## Apresentação do Projeto
+## Banco de dados
 
 O projeto Soul Hunter consiste em um jogo JvA (jogador versus ambiente) com mecânicas simples de práticas com dois modos de jogo.
 O primeiro é um modo história, onde o jogador avançará por fases, derrotando inimigos e desbloqueando partes da história.
