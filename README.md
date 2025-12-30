@@ -156,6 +156,15 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 <br>
 <br>
 
+Abaixo um exemplo de envio e leitura dos dados:
+-Envio dos dados-
+``` json
+{
+  "usuario":Znafo,
+  "pontos":1000
+}
+```
+
 ### Cronograma de Desenvolvimento
 | Período | Atividade | Responsável |
 |---------|-----------|-------------|
