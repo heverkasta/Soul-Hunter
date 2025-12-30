@@ -155,7 +155,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 -O site irá se conectar ao mesmo banco, para buscar as informações necesárias e mostrar no site. "Pontos" serve para o ranking do modo arcade e "Usuários" para o mesmo propósito, mas também sendo usado na parte de perfil e jogo.
 <br>
 
-Abaixo um exemplo de envio e leitura dos dados:<br>
+3)Abaixo um exemplo de envio e leitura dos dados:<br>
 -Envio dos dados-
 ``` json
 {
