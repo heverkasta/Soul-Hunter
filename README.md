@@ -151,7 +151,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 -Sendo assim, cada jogador no banco de dados é um documento próprio, contendo seu nome e pontuação.
 
 2)-O jogo irá se conectar ao banco através da API, que receberá os dados necessários que serão enviados pelo jogo em formato JSON, através de requisições HTTP, pelo endpoint "/api/dados", valida-los e envia-los para o banco.<br>
--O site irá se conectar ao mesmo banco, para buscar as informações necesárias e mostrar no site. "Pontos" serve para o ranking do modo arcade e "Usuários" para o mesmo propósito, mas também sendo usado na parte de perfil e jogo.
+E o site irá se conectar ao mesmo banco, para buscar as informações necesárias e mostrar no site. "Pontos" serve para o ranking do modo arcade e "Usuários" para o mesmo propósito, mas também sendo usado na parte de perfil e jogo.
 <br>
 
 3)Abaixo um exemplo de envio e leitura dos dados:<br>
