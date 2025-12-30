@@ -142,12 +142,11 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 ![terreno](https://github.com/heverkasta/Soul-Hunter/blob/main/exemplos/terreno.png?raw=true)
 
 ## Banco de dados
+1)Para o banco de dados do jogo, será utilizado o Firebase, que é um banco de dados NOSQL, ou seja, que não se utiliza das tradicionais tabelas e SQL, mas sim documentos e cada documento pode conter um ou mais dados. Nesse banco será armazenado dois tipos de dados:
+-"Usuário", do tipo string
+-"Pontos", do tipo int
 
-O projeto Soul Hunter consiste em um jogo JvA (jogador versus ambiente) com mecânicas simples de práticas com dois modos de jogo.
-O primeiro é um modo história, onde o jogador avançará por fases, derrotando inimigos e desbloqueando partes da história.
-O segundo modo tem como objetivo derrotar e sobreviver a hordas infinitas de inimigos, buscando conseguir a maior pontuação possível do ranking.
-A versão web do projeto possibilitará aos usuários jogarem o Soul Hunter na web, sem a necessidade de instalar, além de conter um chat em tempo real para que os jogadores conversem entre si e uma tabela de ranking para o modo de hordas infinitas.
-
+2)
 
 ### Cronograma de Desenvolvimento
 | Período | Atividade | Responsável |
