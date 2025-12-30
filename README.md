@@ -150,8 +150,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 <br>
 -Sendo assim, cada jogador no banco de dados é um documento próprio, contendo seu nome e pontuação.
 
-2)-O jogo irá se conectar ao banco através da API, que receberá os dados necessários que serão enviados pelo jogo em formato JSON, valida-los e envia-los para o banco.
-<br>
+2)-O jogo irá se conectar ao banco através da API, que receberá os dados necessários que serão enviados pelo jogo em formato JSON, através de requisições HTTP, pelo endpoint "/api/dados", valida-los e envia-los para o banco.
 -O site irá se conectar ao mesmo banco, para buscar as informações necesárias e mostrar no site. "Pontos" serve para o ranking do modo arcade e "Usuários" para o mesmo propósito, mas também sendo usado na parte de perfil e jogo.
 <br>
 
@@ -184,6 +183,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
   }
 }
 ```
+Dessa forma, o jogo e o site interagem com o banco de dados de maneira indireta e segura, utilizando a API como intermediária para envio e leitura das informações armazenadas no Firebase Firestore.
 
 <br>
 
