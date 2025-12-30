@@ -147,6 +147,8 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 -"Usuário", do tipo string
 <br>
 -"Pontos", do tipo int
+<br>
+-Sendo assim, cada jogador no banco de dados é um documento próprio, contendo seu nome e pontuação.
 
 2)-O jogo irá se conectar ao banco através da API, que receberá os dados necessários que serão enviados pelo jogo em formato JSON, valida-los e envia-los para o banco.
 <br>
