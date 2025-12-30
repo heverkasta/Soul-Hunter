@@ -145,6 +145,7 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 1)Para o banco de dados do jogo, será utilizado o Firebase, que é um banco de dados NOSQL, ou seja, que não se utiliza das tradicionais tabelas e SQL, mas sim documentos e cada documento pode conter um ou mais dados. Nesse banco será armazenado dois tipos de dados:
 <br>
 -"Usuário", do tipo string
+<br>
 -"Pontos", do tipo int
 
 2)
