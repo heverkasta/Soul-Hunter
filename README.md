@@ -154,9 +154,8 @@ Tela Inicial → Tela de Seleção de Personagem → Tela do Jogo.
 <br>
 -O site irá se conectar ao mesmo banco, para buscar as informações necesárias e mostrar no site. "Pontos" serve para o ranking do modo arcade e "Usuários" para o mesmo propósito, mas também sendo usado na parte de perfil e jogo.
 <br>
-<br>
 
-Abaixo um exemplo de envio e leitura dos dados:
+Abaixo um exemplo de envio e leitura dos dados:<br>
 -Envio dos dados-
 ``` json
 {
@@ -164,6 +163,29 @@ Abaixo um exemplo de envio e leitura dos dados:
   "pontos":1000
 }
 ```
+<br>
+
+-Leitura(response)-
+``` json
+{
+  "status": "Dados enviados!",
+  "firebase_response": {
+    "name": "projects/soul-hunter-eaf66/databases/(default)/documents/Ordem/Znafo",
+    "fields": {
+      "pontos": {
+        "integerValue": "380"
+      },
+      "usuario": {
+        "stringValue": "Znafo"
+      }
+    },
+    "createTime": "2025-12-29T17:04:10.547751Z",
+    "updateTime": "2025-12-29T17:04:10.547751Z"
+  }
+}
+```
+
+<br>
 
 ### Cronograma de Desenvolvimento
 | Período | Atividade | Responsável |
