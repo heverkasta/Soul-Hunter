@@ -1,0 +1,27 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1767121813
+icon.svg::CompressedTexture2D::7415735960322819227::1767121754::1767121814::1::::<><><>0<>0<>cdb8ac6f3c98cb409bd3001e616c8825<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1767121754
+Selection 2025-07-05T13.18.19.png::CompressedTexture2D::7673970347684447009::1767121754::1767121814::1::::<><><>0<>0<>c2259cf681b512768db51d9d4e070235<>res://.godot/imported/Selection 2025-07-05T13.18.19.png-dacfe2b2d5e84c87c81caa2a8c532ee4.ctex::
+Selection 2025-07-05T13.18.30.png::CompressedTexture2D::8437297534568748271::1767121754::1767121814::1::::<><><>0<>0<>50cb176de166f4ed856205ee1b85aa25<>res://.godot/imported/Selection 2025-07-05T13.18.30.png-fe29c197c470548ad8d2a1c2d9b4f848.ctex::
+::res://assets/images/::1767121754
+base-overlay.png::CompressedTexture2D::2694811734394581862::1767121754::1767121814::1::::<><><>0<>0<>f4c167687c41b32d26f4765973556dc5<>res://.godot/imported/base-overlay.png-8fa7e66c195fba861816cd9b634fda9f.ctex::
+move_base.png::CompressedTexture2D::4485611577231095682::1767121754::1767121814::1::::<><><>0<>0<>84afee3b649a80ac0de4f9b5423d9f44<>res://.godot/imported/move_base.png-d09fb56245a26c78a20ecb3447addb07.ctex::
+move_stick.png::CompressedTexture2D::6045392025088474094::1767121754::1767121814::1::::<><><>0<>0<>b35fa2aa875c49bd8fad0fabf994140a<>res://.godot/imported/move_stick.png-56083361a8e99f308cecc11956c92b45.ctex::
+Selection 2025-07-05T14.53.42.png::CompressedTexture2D::1299886684795255327::1767121754::1767121814::1::::<><><>0<>0<>2dd96c542878cd07def80bc4a0f7f6b2<>res://.godot/imported/Selection 2025-07-05T14.53.42.png-fe5162452e5b77d107e36fe2fb47e9a7.ctex::
+Selection 2025-07-05T14.54.38.png::CompressedTexture2D::7659610402944836359::1767121754::1767121814::1::::<><><>0<>0<>9f92f080ff176d6fc9fff14f952ae374<>res://.godot/imported/Selection 2025-07-05T14.54.38.png-a2394e4bab6cdb764ffc97fc5f2187ce.ctex::
+Selection 2025-07-05T14.55.17.png::CompressedTexture2D::3713838985026185925::1767121754::1767121814::1::::<><><>0<>0<>8b006898fffc5c8cc544e9a9c2177337<>res://.godot/imported/Selection 2025-07-05T14.55.17.png-32ce368160bb8fd8d0c06cf8fa5054da.ctex::
+Selection 2025-07-05T14.55.26.png::CompressedTexture2D::6480522087081445474::1767121754::1767121814::1::::<><><>0<>0<>970ecdd2d32be6d9f3474222a4cb5048<>res://.godot/imported/Selection 2025-07-05T14.55.26.png-43ee5bedb8bb84220c78c1fea50b5284.ctex::
+shoot_base.png::CompressedTexture2D::1144339164659120019::1767121754::1767121814::1::::<><><>0<>0<>b55db532f44a139a626ceac8cbfae6e2<>res://.godot/imported/shoot_base.png-59f75a188eef23a54dbb329e051c8e00.ctex::
+shoot_stick.png::CompressedTexture2D::781225352419527450::1767121754::1767121814::1::::<><><>0<>0<>a313f1562cdaeb446d0751de607106d3<>res://.godot/imported/shoot_stick.png-c1cd7fd39a05f93108e82f7539f5675b.ctex::
+shoot_stick_area.png::CompressedTexture2D::2426150145906698416::1767121754::1767121814::1::::<><><>0<>0<>955310e8472bff5cfe9509426eebcb87<>res://.godot/imported/shoot_stick_area.png-384c4c87ca2c1713885142b10f1da140.ctex::
+::res://scenes/::1767121754
+attack_joystick.tscn::PackedScene::1989244977993562226::1767121754::0::1::::<><><>0<>0<><>::uid://bs6andvddp7hp::::res://assets/images/Selection 2025-07-05T14.55.17.png<>uid://brpc7s6y3lidc::::res://scripts/joystick_mobile.gd<>uid://cylhiti7xlmsg::::res://assets/images/Selection 2025-07-05T14.55.26.png
+bullet.tscn::PackedScene::860517189083932747::1767121754::0::1::::<><><>0<>0<><>::uid://dwi1ctd52j1bs::::res://scripts/bullet.gd<>uid://dshdb7xo5i3od::::res://assets/Selection 2025-07-05T13.18.30.png
+game.tscn::PackedScene::7779281233693017587::1767121754::0::1::::<><><>0<>0<><>::uid://bpkw0df5fftmt::::res://scenes/player.tscn<>uid://mi3ue17fowul::::res://scenes/bullet.tscn<>uid://bchin8y0hh22m::::res://scenes/move_joystick.tscn<>uid://3lutryukdx0m::::res://scenes/attack_joystick.tscn
+move_joystick.tscn::PackedScene::2541759738001887574::1767121754::0::1::::<><><>0<>0<><>::uid://srw7dao4x30v::::res://assets/images/Selection 2025-07-05T14.53.42.png<>uid://brpc7s6y3lidc::::res://scripts/joystick_mobile.gd<>uid://dhemwt420u1j4::::res://assets/images/Selection 2025-07-05T14.54.38.png
+player.tscn::PackedScene::3461277701156705007::1767121754::0::1::::<><><>0<>0<><>::uid://dhllf2bge2xbl::::res://assets/Selection 2025-07-05T13.18.19.png<>uid://dj1n81ct5uavb::::res://scripts/player.gd
+::res://scripts/::1767121754
+bullet.gd::GDScript::8721514850525825300::1767121754::0::1::::<>Area2D<><>0<>0<><>::
+joystick_mobile.gd::GDScript::3610776265678586592::1767121754::0::1::::<>TextureRect<><>0<>0<><>::
+player.gd::GDScript::7845485087132836907::1767121754::0::1::::<>CharacterBody2D<><>0<>0<><>::
