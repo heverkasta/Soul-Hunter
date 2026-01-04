@@ -1,0 +1,6 @@
+res://scenes/Elise.tscn
+res://scripts/joystickMobile.gd
+res://scenes/move_joystick.tscn
+res://scenes/attack_joystick.tscn
+res://scenes/game.tscn
+res://scripts/elise.gd
