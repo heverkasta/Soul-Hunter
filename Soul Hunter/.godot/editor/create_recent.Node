@@ -1,5 +1,8 @@
-CanvasLayer
-TextureRect
 CollisionShape2D
+StaticBody2D
+TileMapDual
 AnimatedSprite2D
 CharacterBody2D
+Camera2D
+CanvasLayer
+TextureRect

@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Soul Hunter"
+run/main_scene="uid://c1kgojv6jeo6v"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/TileMapDual/plugin.cfg")
 
 [input_devices]
 

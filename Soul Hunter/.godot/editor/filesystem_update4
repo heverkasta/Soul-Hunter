@@ -1,6 +1,9 @@
+res://scenes/map.tscn
+res://addons/TileMapDual/tile_map_dual.gd
+res://addons/TileMapDual/terrain_preset.gd
+res://scenes/slime1.tscn
+res://scripts/slime_1.gd
 res://scenes/Elise.tscn
-res://scripts/joystickMobile.gd
-res://scenes/move_joystick.tscn
-res://scenes/attack_joystick.tscn
 res://scenes/game.tscn
 res://scripts/elise.gd
+res://scenes/tree.tscn
