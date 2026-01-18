@@ -1,9 +1,5 @@
-res://scenes/map.tscn
+res://scripts/bullet.gd
 res://addons/TileMapDual/tile_map_dual.gd
-res://addons/TileMapDual/terrain_preset.gd
-res://scenes/slime1.tscn
-res://scripts/slime_1.gd
-res://scenes/Elise.tscn
-res://scenes/game.tscn
+res://scenes/bullet.tscn
 res://scripts/elise.gd
-res://scenes/tree.tscn
+res://scenes/Elise.tscn

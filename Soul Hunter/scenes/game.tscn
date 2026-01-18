@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d3lcjptta5fa5" path="res://scenes/Elise.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://20m2g8gbaph4" path="res://scenes/move_joystick.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://b5rlwb30vwk06" path="res://scenes/attack_joystick.tscn" id="3_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://bj33df16mmflg" path="res://scenes/slime1.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://bj33df16mmflg" path="res://scenes/smalSlime.tscn" id="5_iywne"]
 
 [node name="game" type="Node2D"]
 y_sort_enabled = true

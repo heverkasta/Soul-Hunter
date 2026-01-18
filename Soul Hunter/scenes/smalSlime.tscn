@@ -3,19 +3,19 @@
 [ext_resource type="Script" uid="uid://bkfyoqewjntb4" path="res://scripts/slime_1.gd" id="1_3p6bn"]
 [ext_resource type="Texture2D" uid="uid://cw32piym6kyjd" path="res://assets/mobs/slime1.png" id="2_68p8s"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_it2au"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ms6f1"]
 atlas = ExtResource("2_68p8s")
 region = Rect2(0, 0, 25, 17)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ef23d"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7djli"]
 atlas = ExtResource("2_68p8s")
 region = Rect2(25, 0, 25, 17)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_owgt5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg8re"]
 atlas = ExtResource("2_68p8s")
 region = Rect2(50, 0, 25, 17)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dy1uo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_st7ud"]
 atlas = ExtResource("2_68p8s")
 region = Rect2(75, 0, 25, 17)
 
@@ -23,43 +23,41 @@ region = Rect2(75, 0, 25, 17)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_it2au")
+"texture": SubResource("AtlasTexture_ms6f1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ef23d")
+"texture": SubResource("AtlasTexture_7djli")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_owgt5")
+"texture": SubResource("AtlasTexture_jg8re")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dy1uo")
+"texture": SubResource("AtlasTexture_st7ud")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_owgt5")
+"texture": SubResource("AtlasTexture_jg8re")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ef23d")
+"texture": SubResource("AtlasTexture_7djli")
 }],
 "loop": true,
 "name": &"walk",
 "speed": 9.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jl0sr"]
-radius = 4.9999304
-height = 13.999804
+[sub_resource type="CircleShape2D" id="CircleShape2D_2wogi"]
+radius = 6.0
 
-[node name="Slime 1" type="CharacterBody2D"]
+[node name="Smal Slime" type="CharacterBody2D"]
 script = ExtResource("1_3p6bn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -8)
+position = Vector2(0, -9)
 sprite_frames = SubResource("SpriteFrames_wsxpu")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.26026395
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4.9999995)
+position = Vector2(0, -6)
 rotation = 1.5709352
-shape = SubResource("CapsuleShape2D_jl0sr")
+shape = SubResource("CircleShape2D_2wogi")

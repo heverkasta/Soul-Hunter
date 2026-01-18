@@ -1,7 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://d3lcjptta5fa5"]
+[gd_scene load_steps=20 format=3 uid="uid://d3lcjptta5fa5"]
 
 [ext_resource type="Texture2D" uid="uid://cy6l5dmfhelug" path="res://assets/elise_sprite.png" id="1_rhqud"]
 [ext_resource type="Script" uid="uid://d0ua6jc7ouamx" path="res://scripts/elise.gd" id="1_vcxbm"]
+[ext_resource type="PackedScene" uid="uid://drhckadv4q6fj" path="res://scenes/bullet.tscn" id="2_qv4d5"]
+[ext_resource type="PackedScene" uid="uid://c3vy6741iinl7" path="res://scenes/weapon.tscn" id="3_jd3yf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vcxbm"]
 atlas = ExtResource("1_rhqud")
@@ -111,7 +113,9 @@ animations = [{
 radius = 4.0
 
 [node name="Elise" type="CharacterBody2D"]
+z_as_relative = false
 script = ExtResource("1_vcxbm")
+bullet_scene = ExtResource("2_qv4d5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -10)
@@ -122,3 +126,6 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_1njpp")
+
+[node name="weaponPivot" parent="." instance=ExtResource("3_jd3yf")]
+position = Vector2(0, -7)
