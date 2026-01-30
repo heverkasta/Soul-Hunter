@@ -15,4 +15,4 @@ var soul := 0:
 		soul = value
 		soul_update.emit(value)
 
-var username := ""
+var username := "teste de pontos"

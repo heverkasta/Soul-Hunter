@@ -21,6 +21,8 @@ var current_health : int = max_health
 var knokback_velocity : Vector2 = Vector2.ZERO
 var knokback_decay : float = speed * 8
 
+signal player_died
+
 func _ready() -> void:
 	Global.player = self
 	Global.soul_update.connect(update_soul_level)
@@ -39,9 +41,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity = move_direction * speed
 		move_and_slide()
-		
-		if attack_direction.length() > 0.2 and can_shoot:
-			shoot(attack_direction)
+	
+	if attack_direction.length() > 0.2 and can_shoot:
+		shoot(attack_direction)
 	
 	if attack_direction.x > 0:
 		animation.flip_h = false
@@ -123,4 +125,8 @@ func apply_knokback(force: Vector2):
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemies"):
-		take_damage(body.damage, body.global_position)
+		if (current_health-body.damage) > 0:
+			take_damage(body.damage, body.global_position)
+		else:
+			current_health = 0
+			player_died.emit()

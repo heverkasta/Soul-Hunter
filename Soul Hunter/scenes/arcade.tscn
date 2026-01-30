@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://d13tkluu0igon" path="res://assets/ui/proguess_health.png" id="5_sktuj"]
 [ext_resource type="Texture2D" uid="uid://dcyarhivi2wmt" path="res://assets/ui/bar_overlay.png" id="7_0ukt7"]
 [ext_resource type="Texture2D" uid="uid://brutv3fv6pcrv" path="res://assets/ui/progress_soul.png" id="7_iwdyi"]
+[ext_resource type="PackedScene" uid="uid://ctd20jgvr6v4g" path="res://scenes/gameover_arcade.tscn" id="8_sktuj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m2wjg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xwleh"]
 texture = ExtResource("5_sktuj")
@@ -75,18 +78,35 @@ glow_hdr_luminance_cap = 1.62
 y_sort_enabled = true
 script = ExtResource("1_wer3u")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=156426674]
+[node name="hud" type="CanvasLayer" parent="." unique_id=156426674]
 
-[node name="Move Joystick" parent="CanvasLayer" unique_id=1579684198 instance=ExtResource("2_8hgfh")]
+[node name="main hud" type="Panel" parent="hud" unique_id=1722965420]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_m2wjg")
+
+[node name="Move Joystick" parent="hud/main hud" unique_id=1579684198 instance=ExtResource("2_8hgfh")]
 unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1152.0
+offset_bottom = 648.0
 
-[node name="Attack Joystick" parent="CanvasLayer" unique_id=1983368250 instance=ExtResource("3_utn3h")]
+[node name="Attack Joystick" parent="hud/main hud" unique_id=1983368250 instance=ExtResource("3_utn3h")]
 unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1152.0
+offset_bottom = 648.0
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1103986741]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="MarginContainer" type="MarginContainer" parent="hud/main hud" unique_id=1103986741]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 30
@@ -94,7 +114,7 @@ theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
 
-[node name="wave_label" type="Label" parent="CanvasLayer/MarginContainer" unique_id=1344655444]
+[node name="wave_label" type="Label" parent="hud/main hud/MarginContainer" unique_id=1344655444]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -107,7 +127,7 @@ theme_override_font_sizes/font_size = 48
 text = "Onda:"
 horizontal_alignment = 1
 
-[node name="score_label" type="Label" parent="CanvasLayer/MarginContainer" unique_id=943758105]
+[node name="score_label" type="Label" parent="hud/main hud/MarginContainer" unique_id=943758105]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
@@ -120,11 +140,12 @@ theme_override_font_sizes/font_size = 48
 text = "Pontos: 0"
 horizontal_alignment = 1
 
-[node name="player_healthbar" type="ProgressBar" parent="CanvasLayer" unique_id=1064724673]
+[node name="player_healthbar" type="ProgressBar" parent="hud/main hud" unique_id=1064724673]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 75.0
 offset_top = 51.0
-offset_right = 273.0
+offset_right = 270.0
 offset_bottom = 66.0
 size_flags_horizontal = 0
 theme_override_styles/fill = SubResource("StyleBoxTexture_xwleh")
@@ -132,24 +153,29 @@ max_value = 25.0
 value = 25.0
 show_percentage = false
 
-[node name="soul_bar" type="ProgressBar" parent="CanvasLayer" unique_id=6761468]
+[node name="soul_bar" type="ProgressBar" parent="hud/main hud" unique_id=6761468]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 72.0
 offset_top = 74.0
 offset_right = 198.0
-offset_bottom = 91.0
+offset_bottom = 90.0
 size_flags_horizontal = 0
 theme_override_styles/fill = SubResource("StyleBoxTexture_fgq0x")
 value = 50.0
 show_percentage = false
 
-[node name="bar_overlay" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1844038109]
+[node name="bar_overlay" type="AnimatedSprite2D" parent="hud/main hud" unique_id=1844038109]
 position = Vector2(156, 66)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_fgq0x")
 animation = &"tum_tum"
 autoplay = "tum_tum"
 frame_progress = 0.49147266
+
+[node name="gameover_arcade" parent="hud" unique_id=977741309 instance=ExtResource("8_sktuj")]
+process_mode = 3
+visible = false
 
 [node name="Map" parent="." unique_id=2040865469 instance=ExtResource("4_cmngb")]
 z_as_relative = false
@@ -166,3 +192,5 @@ zoom = Vector2(4, 4)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=807012125]
 environment = SubResource("Environment_iywne")
+
+[connection signal="player_died" from="Elise" to="." method="_on_elise_player_died"]

@@ -3,6 +3,8 @@ extends Node2D
 @onready var player: CharacterBody2D = %Elise
 @onready var wave_label: Label = %wave_label
 @onready var score_label: Label = %score_label
+@onready var main_hud: Panel = $"hud/main hud"
+@onready var gameover_arcade: Control = $hud/gameover_arcade
 
 
 
@@ -86,3 +88,13 @@ func calculate_spawn_position() -> Vector2:
 
 func update_score_label(score):
 	score_label.text = "Pontuação: %d" % Global.score
+
+func game_over():
+	set_physics_process(false)
+	get_tree().paused = true
+	main_hud.hide()
+	gameover_arcade.show()
+
+
+func _on_elise_player_died() -> void:
+	game_over()

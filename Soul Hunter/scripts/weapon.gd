@@ -1,7 +1,8 @@
 extends Marker2D
 
 @onready var bow: Sprite2D = $Bow
-@onready var attack_joystick: Control = $"../../CanvasLayer/Attack Joystick".get_node("base")
+@onready var attack_joystick: Control = $"../../hud/main hud/Attack Joystick".get_node("base")
+
 
 func _physics_process(_delta):
 	var attack_direction = attack_joystick.get_direction().normalized()

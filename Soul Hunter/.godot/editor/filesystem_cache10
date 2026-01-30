@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769730118
+::res://::1769798976
 icon.svg::CompressedTexture2D::5272616777467925784::1767545454::1767545459::1::::<><><>0<>0<>e72f3bc0b00fdcfdc4ef9f869686cab0<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1767653692
 ::res://addons/TileMapDual/::1769707228
@@ -46,10 +46,15 @@ hardSlimeDamage.png::CompressedTexture2D::8740730638771430400::1769625772::17696
 hardSlimeWalk.png::CompressedTexture2D::8997990199748712002::1769625696::1769625739::1::::<><><>0<>0<>6c0977cec8d2ca2962b98de616759876<>res://.godot/imported/hardSlimeWalk.png-f3cae725a9c3d2976541c65352b50d4f.ctex::
 mediumSlimeDamage.png::CompressedTexture2D::6748358111437936912::1769625643::1769625739::1::::<><><>0<>0<>b1b31e0227e28e251a11e1ccb71874cb<>res://.godot/imported/mediumSlimeDamage.png-02ef5aa955b7cbd72b95a7aa8a7a88ef.ctex::
 mediumSlimeWalk.png::CompressedTexture2D::4132450283065233194::1769625668::1769625739::1::::<><><>0<>0<>f49a8e807724d9f9d85e1b7a9b59d99e<>res://.godot/imported/mediumSlimeWalk.png-b8488c0cad0675d4671bc520f43097aa.ctex::
-::res://assets/ui/::1769730456
+::res://assets/ui/::1769800614
 bar_overlay.png::CompressedTexture2D::7349215543936993787::1769730456::1769730457::1::::<><><>0<>0<>8f432fc96bc1bf89ba36682ba615099f<>res://.godot/imported/bar_overlay.png-ab0cf83ee420439a72d5b68ccb5bbb8b.ctex::
+exit_button.png::CompressedTexture2D::180797830125154106::1769800614::1769800620::1::::<><><>0<>0<>75510b7458897d4ed1db0d0d07f571a2<>res://.godot/imported/exit_button.png-7e0a72fb1e911f399a13282551b9047b.ctex::
 progress_soul.png::CompressedTexture2D::3622111184529401639::1769729941::1769729942::1::::<><><>0<>0<>fa814d791e1928c2cbd1508dd796fd85<>res://.godot/imported/progress_soul.png-277d74564e70ca19b5d04e1cae39a454.ctex::
 proguess_health.png::CompressedTexture2D::9043146653178809297::1769729918::1769729942::1::::<><><>0<>0<>54feac0d803081bad266c29588720503<>res://.godot/imported/proguess_health.png-767439fcc38012481278207470d7c651.ctex::
+::res://assets/ui/gameover/::1769800445
+::res://assets/ui/gameover/arcade/::1769800575
+panel.png::CompressedTexture2D::138198266160961985::1769800462::1769800575::1::::<><><>0<>0<>328c4c390bffc22b79cf7f789649eecf<>res://.godot/imported/panel.png-daf4df4780010a180a5024fd181af639.ctex::
+send_button_gameover.png::CompressedTexture2D::1185850360979535102::1769800527::1769800575::1::::<><><>0<>0<>d460e0ff0740103e4ca94b8c7c073fc2<>res://.godot/imported/send_button_gameover.png-4be21f40965a0dda98778ea3bbaf0604.ctex::
 ::res://assets/ui/joystick/::1767556987
 Ataque-Borda.png::CompressedTexture2D::6534948805563848768::1767556973::1767556987::1::::<><><>0<>0<>da7578efc1f33d3a4c445652a0160d9e<>res://.godot/imported/Ataque-Borda.png-ee00b599e36b7f09ec7e8cb0dd3f59fe.ctex::
 Ataque-Centro.png::CompressedTexture2D::4149959515192711732::1767556979::1767556987::1::::<><><>0<>0<>f748c39b05b9344dc82ff333d3d30c6e<>res://.godot/imported/Ataque-Centro.png-2529497e4b81e47e749805b0fb2a43c5.ctex::
@@ -87,8 +92,9 @@ PixelOperatorMonoHB8.ttf::FontFile::8197660668939327404::1538626500::1769632023:
 PixelOperatorMonoHB.ttf::FontFile::8104302282077215269::1538626500::1769632023::1::::<><><>0<>0<>96377e8cafa698033570f140521dd53f<>res://.godot/imported/PixelOperatorMonoHB.ttf-e66088fcca534991c1852a328d58180c.fontdata::
 PixelOperatorSC-Bold.ttf::FontFile::2385570401040796088::1538626500::1769632023::1::::<><><>0<>0<>47568c4a2a019028017c8af308ffbac9<>res://.godot/imported/PixelOperatorSC-Bold.ttf-722a4a7f504f6c1834d8b3f7c37857af.fontdata::
 PixelOperatorSC.ttf::FontFile::2431471322368600533::1538626500::1769632023::1::::<><><>0<>0<>fb496ae722de4606f0dca9ef3e43d0e6<>res://.godot/imported/PixelOperatorSC.ttf-541b9495f1dfc0e7703335d1d2a183da.fontdata::
-::res://scenes/::1769730337
-arcade.tscn::PackedScene::6618784889158652859::1769730337::0::1::::<><><>0<>0<><>::uid://d723p2j1v35n::::res://scripts/arcade.gd<>uid://20m2g8gbaph4::::res://scenes/move_joystick.tscn<>uid://b5rlwb30vwk06::::res://scenes/attack_joystick.tscn<>uid://qngbm4eesuic::::res://fonts/pixel_operator/PixelOperator.ttf<>uid://b3q0sna1xeess::::res://scenes/map.tscn<>uid://d3lcjptta5fa5::::res://scenes/Elise.tscn<>uid://d13tkluu0igon::::res://assets/ui/proguess_health.png<>uid://dh4tkfm6bp2hm::::res://assets/ui/title screen/text_label_bg.png<>uid://brutv3fv6pcrv::::res://assets/ui/progress_soul.png
+::res://scenes/::1769731283
+account_screen.tscn::PackedScene::1611207899430684757::1769728615::0::1::::<><><>0<>0<><>::uid://djnu53fvwk77t::::res://scripts/account_screen.gd<>uid://cbaxkd3jcpbgq::::res://assets/ui/title screen/background.png<>uid://dh4tkfm6bp2hm::::res://assets/ui/title screen/text_label_bg.png<>uid://qngbm4eesuic::::res://fonts/pixel_operator/PixelOperator.ttf<>uid://begylkiv4u2w1::::res://assets/ui/title screen/send_button.png
+arcade.tscn::PackedScene::6618784889158652859::1769731283::0::1::::<><><>0<>0<><>::uid://d723p2j1v35n::::res://scripts/arcade.gd<>uid://20m2g8gbaph4::::res://scenes/move_joystick.tscn<>uid://b5rlwb30vwk06::::res://scenes/attack_joystick.tscn<>uid://qngbm4eesuic::::res://fonts/pixel_operator/PixelOperator.ttf<>uid://b3q0sna1xeess::::res://scenes/map.tscn<>uid://d3lcjptta5fa5::::res://scenes/Elise.tscn<>uid://d13tkluu0igon::::res://assets/ui/proguess_health.png<>uid://dcyarhivi2wmt::::res://assets/ui/bar_overlay.png<>uid://brutv3fv6pcrv::::res://assets/ui/progress_soul.png
 attack_joystick.tscn::PackedScene::4527887685982127161::1767560687::0::1::::<><><>0<>0<><>::uid://c0dtwf1s2plue::::res://assets/ui/joystick/Ataque-Borda.png<>uid://cgkmvq84gw1kn::::res://scripts/joystickMobile.gd<>uid://b0ejhykax4frg::::res://assets/ui/joystick/Ataque-Centro.png
 bullet.tscn::PackedScene::8367062334756829791::1769461011::0::1::::<><><>0<>0<><>::uid://blulkc26tymom::::res://scripts/bullet.gd<>uid://cleumgqhgl6ly::::res://assets/arow.png
 easy_slime_(arcade).tscn::PackedScene::2682588822683513540::1769715764::0::1::::<><><>0<>0<><>::uid://bnjy605rak2ul::::res://scripts/slime(arcade).gd<>uid://b41lsmsapdk42::::res://assets/mobs/arcade/easySlimeWalk.png<>uid://b43kcnx0bug8t::::res://assets/mobs/arcade/easySlimeDamage.png
@@ -97,20 +103,19 @@ hard_slime_(arcade).tscn::PackedScene::1421628668787066534::1769712523::0::1::::
 map.tscn::PackedScene::4386289102748185046::1769720053::0::1::::<><><>0<>0<><>::uid://cmbcfxlkxxnwq::::res://addons/TileMapDual/ghost_material.tres<>uid://cmvbi82isf235::::res://assets/map/arcadeRed.png<>uid://cjk8nronimk5r::::res://addons/TileMapDual/tile_map_dual.gd<>uid://d1206a2tlhdwe::::res://assets/map/arcadeRedLightOff.png<>uid://d2wxusu6qfuqn::::res://assets/map/arcadePurple.png<>uid://4enne6cmbqaj::::res://assets/map/arcadePurpleLightOff.png
 medium_slime_(arcade).tscn::PackedScene::4563099965463242455::1769715887::0::1::::<><><>0<>0<><>::uid://bnjy605rak2ul::::res://scripts/slime(arcade).gd<>uid://c3e7qb2kjdnfk::::res://assets/mobs/arcade/mediumSlimeDamage.png<>uid://by4138m4sl5es::::res://assets/mobs/arcade/mediumSlimeWalk.png
 move_joystick.tscn::PackedScene::1947485408819611607::1767660140::0::1::::<><><>0<>0<><>::uid://ckmylxbq3euno::::res://assets/ui/joystick/Movimento-Borda.png<>uid://cgkmvq84gw1kn::::res://scripts/joystickMobile.gd<>uid://cql3hml2lkpqf::::res://assets/ui/joystick/Movimento-Centro.png
-account_screen.tscn::PackedScene::1611207899430684757::1769728615::0::1::::<><><>0<>0<><>::uid://djnu53fvwk77t::::res://scripts/account_screen.gd<>uid://cbaxkd3jcpbgq::::res://assets/ui/title screen/background.png<>uid://dh4tkfm6bp2hm::::res://assets/ui/title screen/text_label_bg.png<>uid://qngbm4eesuic::::res://fonts/pixel_operator/PixelOperator.ttf<>uid://begylkiv4u2w1::::res://assets/ui/title screen/send_button.png
 smalSlime.tscn::PackedScene::3077628590934919440::1769517947::0::1::::<><><>0<>0<><>::uid://bkfyoqewjntb4::::res://scripts/slime_1.gd<>uid://3u2q05lwnr55::::res://assets/mobs/slime1_damage.png<>uid://cw32piym6kyjd::::res://assets/mobs/slime1.png
 title_screen.tscn::PackedScene::7948756746575392401::1769725648::0::1::::<><><>0<>0<><>::uid://bb0xvn2x6ykc::::res://scripts/title_screen.gd<>uid://c12k4tsdh4553::::res://assets/ui/title screen/play_button.png<>uid://cbaxkd3jcpbgq::::res://assets/ui/title screen/background.png<>uid://dwvosqrt1t8wv::::res://assets/ui/title screen/game_logo.png<>uid://2aswnj4everf::::res://assets/ui/title screen/aviso.png<>uid://btj0jksmef4xi::::res://assets/ui/title screen/arcade_button.png<>uid://mayp88ufcjr1::::res://assets/ui/title screen/account_button.png<>uid://bi0j224rv8d0r::::res://assets/ui/title screen/exit_button.png
 tree.tscn::PackedScene::6745528231225498235::1769292568::0::1::::<><><>0<>0<><>::uid://bec436uscuqg3::::res://assets/map/tree.png
 weapon.tscn::PackedScene::6782995216262685322::1767996991::0::1::::<><><>0<>0<><>::uid://dqeiukghwjbtp::::res://assets/bow.png<>uid://ceh10riprinto::::res://scripts/weapon.gd
-::res://scripts/::1769729461
-arcade.gd::GDScript::278316810082535329::1769721718::0::1::::<>Node2D<><>0<>0<><>::
+::res://scripts/::1769731746
+account_screen.gd::GDScript::7819067947658648419::1769729461::0::1::::<>Control<><>0<>0<><>::
+arcade.gd::GDScript::278316810082535329::1769731746::0::1::::<>Node2D<><>0<>0<><>::
 bullet.gd::GDScript::3200471411843398568::1769642314::0::1::::<>Area2D<><>0<>0<><>::
 elise.gd::GDScript::8955326533995548975::1769715530::0::1::::<>CharacterBody2D<><>0<>0<><>::
 joystickMobile.gd::GDScript::5215385205018883001::1767553382::0::1::::<>TextureRect<><>0<>0<><>::
-account_screen.gd::GDScript::7819067947658648419::1769729461::0::1::::<>Control<><>0<>0<><>::
-title_screen.gd::GDScript::73813343802615486::1769728861::0::1::::<>Control<><>0<>0<><>::
 slime(arcade).gd::GDScript::3318968978412220175::1769715818::0::1::::<>CharacterBody2D<><>0<>0<><>::
 slime_1.gd::GDScript::3100114065349746755::1769287980::0::1::::<>CharacterBody2D<><>0<>0<><>::
+title_screen.gd::GDScript::73813343802615486::1769728861::0::1::::<>Control<><>0<>0<><>::
 weapon.gd::GDScript::5069671578836267512::1768048757::0::1::::<>Marker2D<><>0<>0<><>::
 ::res://singleton/::1769726379
 global.gd::GDScript::713153363573434183::1769726379::0::1::::<>Node<><>0<>0<><>::
