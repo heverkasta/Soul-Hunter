@@ -8,16 +8,29 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Soul Hunter"
-run/main_scene="uid://c1kgojv6jeo6v"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+run/main_scene="uid://dlio4k2m1clo0"
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://singleton/global.gd"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/TileMapDual/plugin.cfg")
+
+[global_group]
+
+enemies=""
+collision=""
 
 [input_devices]
 

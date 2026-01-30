@@ -11,6 +11,6 @@ radius = 4.0
 position = Vector2(0, -16)
 texture = ExtResource("1_avsvi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["collision"]]
 position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_vplca")

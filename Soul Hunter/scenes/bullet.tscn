@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://drhckadv4q6fj"]
+[gd_scene format=3 uid="uid://drhckadv4q6fj"]
 
 [ext_resource type="Script" uid="uid://blulkc26tymom" path="res://scripts/bullet.gd" id="1_y25gk"]
 [ext_resource type="Texture2D" uid="uid://cleumgqhgl6ly" path="res://assets/arow.png" id="2_l5glv"]
@@ -6,18 +6,19 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eoqba"]
 size = Vector2(16, 6)
 
-[node name="bullet" type="Area2D"]
+[node name="bullet" type="Area2D" unique_id=845826480]
 script = ExtResource("1_y25gk")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1106394171]
 position = Vector2(1, 0)
 texture = ExtResource("2_l5glv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1675222437]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_eoqba")
 
-[node name="visibility" type="VisibleOnScreenNotifier2D" parent="."]
+[node name="visibility" type="VisibleOnScreenNotifier2D" parent="." unique_id=1195142820]
 rect = Rect2(-7, -3, 16, 6)
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="visibility" to="." method="_on_visibility_screen_exited"]

@@ -1,5 +1,8 @@
-res://scenes
-res://scripts
-res://assets/mobs
+res://assets/ui/
+res://scripts/
+res://scenes/
+res://assets/mobs/arcade/
+res://assets/mobs/
+res://singleton/
 res://
-res://assets
+res://assets/

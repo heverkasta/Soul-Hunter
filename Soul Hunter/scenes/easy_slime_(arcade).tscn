@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://behp307lqjjlc"]
+
+[ext_resource type="Script" uid="uid://bnjy605rak2ul" path="res://scripts/slime(arcade).gd" id="1_0mm2p"]
+[ext_resource type="Texture2D" uid="uid://b41lsmsapdk42" path="res://assets/mobs/arcade/easySlimeWalk.png" id="2_anaw8"]
+[ext_resource type="Texture2D" uid="uid://b43kcnx0bug8t" path="res://assets/mobs/arcade/easySlimeDamage.png" id="2_qv7xk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7ad4"]
+atlas = ExtResource("2_qv7xk")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyc0a"]
+atlas = ExtResource("2_qv7xk")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fhw0"]
+atlas = ExtResource("2_qv7xk")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k74se"]
+atlas = ExtResource("2_qv7xk")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qv7xk"]
+atlas = ExtResource("2_anaw8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pwb0"]
+atlas = ExtResource("2_anaw8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkyy5"]
+atlas = ExtResource("2_anaw8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxs7b"]
+atlas = ExtResource("2_anaw8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t7ad4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7ad4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyc0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fhw0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k74se")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyc0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7ad4")
+}],
+"loop": false,
+"name": &"damage",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qv7xk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pwb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkyy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxs7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkyy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pwb0")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pyc0a"]
+radius = 3.0
+
+[node name="Easy Slime (arcade)" type="CharacterBody2D" unique_id=1046000893 groups=["enemies"]]
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_0mm2p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1003608090]
+position = Vector2(0, -5)
+sprite_frames = SubResource("SpriteFrames_t7ad4")
+animation = &"damage"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1483023860]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_pyc0a")

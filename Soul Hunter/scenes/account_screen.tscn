@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://w7qmgwqaenht"]
+
+[ext_resource type="Script" uid="uid://djnu53fvwk77t" path="res://scripts/account_screen.gd" id="1_c8qgi"]
+[ext_resource type="Texture2D" uid="uid://cbaxkd3jcpbgq" path="res://assets/ui/title screen/background.png" id="1_rw010"]
+[ext_resource type="Texture2D" uid="uid://dh4tkfm6bp2hm" path="res://assets/ui/title screen/text_label_bg.png" id="2_tn2ed"]
+[ext_resource type="FontFile" uid="uid://qngbm4eesuic" path="res://fonts/pixel_operator/PixelOperator.ttf" id="3_tk464"]
+[ext_resource type="Texture2D" uid="uid://begylkiv4u2w1" path="res://assets/ui/title screen/send_button.png" id="4_xchaf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tk464"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xchaf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8qgi"]
+atlas = ExtResource("4_xchaf")
+region = Rect2(0, 0, 59, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lh4m5"]
+atlas = ExtResource("4_xchaf")
+region = Rect2(0, 15, 59, 14)
+
+[node name="account_screen" type="Control" unique_id=228215812]
+layout_mode = 3
+anchor_right = 0.27800003
+anchor_bottom = 0.27800003
+offset_right = -0.25604248
+offset_bottom = -0.14401245
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c8qgi")
+
+[node name="bg" type="TextureRect" parent="." unique_id=1750180498]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -511.29602
+offset_bottom = -270.104
+texture = ExtResource("1_rw010")
+
+[node name="text_bg" type="TextureRect" parent="." unique_id=48562651]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.356
+anchor_right = 0.70000005
+anchor_bottom = 0.46100003
+offset_top = -0.08000183
+offset_right = -1.5258789e-05
+offset_bottom = 0.019996643
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tn2ed")
+
+[node name="username" type="LineEdit" parent="text_bg" unique_id=1233260784]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.105000004
+anchor_right = 1.0
+anchor_bottom = 1.1580001
+offset_left = 4.0
+offset_top = -2.0050008
+offset_right = -4.0
+offset_bottom = -2.0020027
+theme_override_constants/outline_size = 4
+theme_override_constants/minimum_character_width = 3
+theme_override_fonts/font = ExtResource("3_tk464")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tk464")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xchaf")
+placeholder_text = "Nome de Usuário"
+max_length = 20
+
+[node name="send" type="TextureButton" parent="." unique_id=1813608330]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.483
+anchor_right = 0.592
+anchor_bottom = 0.56100005
+offset_left = -0.060012817
+offset_top = 0.05999756
+offset_right = 0.05999756
+offset_bottom = 0.019989014
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_c8qgi")
+texture_pressed = SubResource("AtlasTexture_lh4m5")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=853151748]
+visible = false
+position = Vector2(160, 90)
+zoom = Vector2(3.6, 3.6)
+
+[connection signal="pressed" from="send" to="." method="_on_send_pressed"]
