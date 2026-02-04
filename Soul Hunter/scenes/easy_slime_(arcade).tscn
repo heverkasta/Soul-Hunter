@@ -92,6 +92,7 @@ radius = 3.0
 z_as_relative = false
 y_sort_enabled = true
 script = ExtResource("1_0mm2p")
+damage = 10
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1003608090]
 position = Vector2(0, -5)

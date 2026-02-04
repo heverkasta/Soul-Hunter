@@ -3,13 +3,17 @@ extends Control
 @onready var pontuação: Label = $pontuação
 @onready var status: Label = $status
 
-var url = "https://hostless-unwastefully-krystle.ngrok-free.dev/api/dados"
 
-var user_score = {"usuario" : Global.username, "pontos" : Global.score}
+
+
+var url = "https://soul-hunter.onrender.com/dados"
+
 
 func _ready() -> void:
-	pontuação.text = "Pontuação: %d" % Global.score
 	http_request.request_completed.connect(_on_request_completed)
+
+func set_score_label():
+	pontuação.text = "Pontuação: %d" %Global.score
 
 func send_data(data):
 	var json = JSON.stringify(data)
@@ -26,11 +30,13 @@ func _on_request_completed(results, response_code, headers, body):
 		status.text = "Lamentamos em informar: o servidor virou artigo da wikpedia"
 
 func _on_send_score_button_pressed() -> void:
+	var user_score = {"usuario" : Global.username, "pontos" : Global.score}
 	if Global.username:
 		send_data(user_score)
 		status.text = "Enviando..."
 	else:
 		status.text = "Sem nome de usuário :("
+	print("score: %d" %Global.score)
 
 func _on_exit_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")

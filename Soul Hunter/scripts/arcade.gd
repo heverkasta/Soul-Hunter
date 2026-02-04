@@ -90,7 +90,6 @@ func update_score_label(score):
 	score_label.text = "Pontuação: %d" % Global.score
 
 func game_over():
-	set_physics_process(false)
 	get_tree().paused = true
 	main_hud.hide()
 	gameover_arcade.show()
@@ -98,3 +97,4 @@ func game_over():
 
 func _on_elise_player_died() -> void:
 	game_over()
+	gameover_arcade.set_score_label()

@@ -5,14 +5,14 @@ signal soul_update
 
 var player
 
-var score := 0:
+var score : int = 0:
 	set(value):
 		score = value
 		score_update.emit(value)
 
-var soul := 0:
+var soul : int = 0:
 	set(value):
 		soul = value
 		soul_update.emit(value)
 
-var username := "teste de pontos"
+var username := ""
