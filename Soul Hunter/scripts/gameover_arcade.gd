@@ -29,7 +29,7 @@ func _on_request_completed(results, response_code, headers, body):
 		status.text = "Lamentamos em informar: o servidor virou artigo da wikpedia"
 
 func _on_send_score_button_pressed() -> void:
-	var user_score = {"usuario" : Global.username, "pontos" : 800}
+	var user_score = {"usuario" : Global.username, "pontos" : Global.score}
 	if Global.username:
 		send_data(user_score)
 		status.text = "Enviando..."
