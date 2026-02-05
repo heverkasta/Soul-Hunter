@@ -80,6 +80,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_tk464")
 theme_override_styles/focus = SubResource("StyleBoxFlat_xchaf")
 placeholder_text = "Nome de Usuário"
 max_length = 20
+keep_editing_on_text_submit = true
 
 [node name="send" type="TextureButton" parent="." unique_id=1813608330]
 layout_mode = 1

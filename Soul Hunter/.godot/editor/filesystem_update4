@@ -1,0 +1,5 @@
+res://scenes/account_screen.tscn
+res://addons/TileMapDual/tile_map_dual.gd
+res://scripts/gameover_arcade.gd
+res://singleton/global.gd
+res://scripts/account_screen.gd

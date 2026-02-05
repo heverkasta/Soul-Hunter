@@ -15,4 +15,4 @@ var soul : int = 0:
 		soul = value
 		soul_update.emit(value)
 
-var username := ""
+var username := "XD"
