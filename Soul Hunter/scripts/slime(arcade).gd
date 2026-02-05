@@ -41,7 +41,7 @@ func apply_knokback(force: Vector2):
 func take_damage(amount: int, source_position: Vector2):
 	health -= amount
 	var knokback_dir = (position - source_position).normalized()
-	apply_knokback(knokback_dir * speed * 3)
+	apply_knokback(knokback_dir * 90)
 	if health <= 0:
 		queue_free()
 		Global.score += score

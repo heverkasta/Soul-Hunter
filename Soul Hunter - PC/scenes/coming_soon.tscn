@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://dgp5k0b4o4mgw"]
+
+[ext_resource type="Texture2D" uid="uid://cbaxkd3jcpbgq" path="res://assets/ui/title screen/background.png" id="1_75nuk"]
+[ext_resource type="Script" uid="uid://547g2ew34aeu" path="res://scripts/coming_soon.gd" id="1_mg78f"]
+[ext_resource type="FontFile" uid="uid://qngbm4eesuic" path="res://fonts/pixel_operator/PixelOperator.ttf" id="2_mg78f"]
+[ext_resource type="Texture2D" uid="uid://wsvhchsqdajs" path="res://assets/ui/title screen/textbox.png" id="3_akidv"]
+[ext_resource type="Texture2D" uid="uid://br70bxjnsdqrm" path="res://assets/ui/title screen/back_button.png" id="4_x3ive"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_03vv6"]
+texture = ExtResource("3_akidv")
+texture_margin_left = 14.0
+texture_margin_top = 14.0
+texture_margin_right = 14.0
+texture_margin_bottom = 14.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqksw"]
+atlas = ExtResource("4_x3ive")
+region = Rect2(0, 0, 27, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fg1k"]
+atlas = ExtResource("4_x3ive")
+region = Rect2(0, 27, 27, 25)
+
+[node name="coming_soon" type="Control" unique_id=1331905177]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mg78f")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1059061625]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.27800003
+anchor_bottom = 0.27800003
+offset_right = -280.25604
+offset_bottom = -140.14401
+texture = ExtResource("1_75nuk")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=1475389644]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.272
+anchor_right = 0.9480001
+anchor_bottom = 0.72800004
+offset_left = -0.13999939
+offset_top = 0.0399971
+offset_right = 0.13998413
+offset_bottom = -0.040008545
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_mg78f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_03vv6")
+text = "O modo história chegará em breve.
+Fique de olho nas atualizações no site do jogo."
+autowrap_mode = 3
+
+[node name="return" type="TextureButton" parent="TextureRect" unique_id=90500372]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.011000001
+anchor_right = 0.030000001
+anchor_bottom = 0.049000002
+offset_left = 5.76
+offset_top = 5.02
+offset_right = 25.4
+offset_bottom = 23.18
+texture_normal = SubResource("AtlasTexture_pqksw")
+texture_pressed = SubResource("AtlasTexture_2fg1k")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=54364893]
+position = Vector2(160, 90)
+zoom = Vector2(3.6, 3.6)
+
+[connection signal="pressed" from="TextureRect/return" to="." method="_on_return_pressed"]

@@ -1,8 +1,6 @@
-res://scripts/arcade.gd
-res://singleton/global.gd
-res://scripts/gameover_arcade.gd
-res://scenes/gameover_arcade.tscn
+res://scenes/hard_slime_(arcade).tscn
 res://addons/TileMapDual/tile_map_dual.gd
-res://addons/TileMapDual/terrain_preset.gd
-res://scenes/map.tscn
+res://scripts/elise.gd
 res://scenes/easy_slime_(arcade).tscn
+res://scenes/medium_slime_(arcade).tscn
+res://scripts/slime(arcade).gd

@@ -107,7 +107,7 @@ func update_soul_level(soul):
 	elif Global.soul >= 50:
 		speed = 80
 		damage = 8
-		shooting_cooldown = 0.5
+		shooting_cooldown = 0.3
 	
 	print("global soul: %d" %Global.soul)
 	print("current soul bar: %d" %current_soulbar)

@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://dujoptu1e5nhp"]
+
+[ext_resource type="Script" uid="uid://bsesw8d3ogsuc" path="res://scripts/pause_menu.gd" id="1_5d2l8"]
+[ext_resource type="Texture2D" uid="uid://bq6glsfimkef1" path="res://assets/ui/pause menu/painel.png" id="2_7l7mv"]
+[ext_resource type="Texture2D" uid="uid://ylkls6eaksc5" path="res://assets/ui/pause menu/continue_button.png" id="3_v4r4p"]
+[ext_resource type="Texture2D" uid="uid://cttyjhb2jsa1" path="res://assets/ui/exit_button.png" id="4_1s2dm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uahpa"]
+bg_color = Color(0, 0, 0, 0.2901961)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88e76"]
+atlas = ExtResource("3_v4r4p")
+region = Rect2(0, 0, 66, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knqa7"]
+atlas = ExtResource("3_v4r4p")
+region = Rect2(0, 11, 66, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71k7c"]
+atlas = ExtResource("4_1s2dm")
+region = Rect2(0, 0, 29, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmnsq"]
+atlas = ExtResource("4_1s2dm")
+region = Rect2(0, 10, 29, 10)
+
+[node name="pause_menu" type="Control" unique_id=267171536]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5d2l8")
+
+[node name="Panel" type="Panel" parent="." unique_id=1620375612]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uahpa")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=17705454]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.397
+anchor_top = 0.287
+anchor_right = 0.60300004
+anchor_bottom = 0.71300006
+offset_left = 0.40597534
+offset_top = 0.27400208
+offset_right = -0.4060669
+offset_bottom = -0.27404785
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7l7mv")
+stretch_mode = 4
+
+[node name="continue_button" type="TextureButton" parent="TextureRect" unique_id=2096581459]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.39100003
+anchor_right = 0.91400003
+anchor_bottom = 0.5
+offset_left = -0.0890007
+offset_top = 0.02948761
+offset_right = 0.08898926
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_88e76")
+texture_pressed = SubResource("AtlasTexture_knqa7")
+stretch_mode = 4
+
+[node name="exit_button" type="TextureButton" parent="TextureRect" unique_id=2135302101]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.316
+anchor_top = 0.61300004
+anchor_right = 0.684
+anchor_bottom = 0.721
+offset_left = 0.01599884
+offset_top = -0.1315155
+offset_right = -0.01600647
+offset_bottom = 0.11450195
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_71k7c")
+texture_pressed = SubResource("AtlasTexture_cmnsq")
+stretch_mode = 4
+
+[connection signal="pressed" from="TextureRect/continue_button" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="TextureRect/exit_button" to="." method="_on_exit_button_pressed"]

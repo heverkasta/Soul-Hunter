@@ -1,0 +1,9 @@
+res://scenes/arcade.tscn
+res://addons/TileMapDual/tile_map_dual.gd
+res://scripts/elise.gd
+res://scenes/bullet.tscn
+res://scripts/bullet.gd
+res://scripts/weapon.gd
+res://scripts/gameover_arcade.gd
+res://scripts/slime(arcade).gd
+res://scripts/slime_1.gd

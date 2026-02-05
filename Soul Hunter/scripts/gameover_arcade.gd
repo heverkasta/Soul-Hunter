@@ -4,10 +4,9 @@ extends Control
 @onready var status: Label = $status
 
 
-
-
 var url = "https://soul-hunter.onrender.com/dados"
 
+signal exit_pressed
 
 func _ready() -> void:
 	http_request.request_completed.connect(_on_request_completed)
@@ -39,4 +38,5 @@ func _on_send_score_button_pressed() -> void:
 	print("score: %d" %Global.score)
 
 func _on_exit_button_pressed() -> void:
+	exit_pressed.emit()
 	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
