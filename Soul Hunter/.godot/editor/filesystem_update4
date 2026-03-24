@@ -1,6 +1,4 @@
-res://scenes/account_screen.tscn
+res://scenes/Elise.tscn
 res://addons/TileMapDual/tile_map_dual.gd
-res://scripts/gameover_arcade.gd
-res://singleton/global.gd
-res://scripts/account_screen.gd
-res://scenes/arcade.tscn
+res://scripts/elise.gd
+res://scripts/weapon.gd

@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-@onready var move_joystick: Control = %"Move Joystick".get_node("base")
-@onready var attack_joystick: Control = %"Attack Joystick".get_node("base")
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var weapon_pivot: Marker2D = $weaponPivot.get_node("Bow/shootingPoint")
 @onready var player_healthbar: ProgressBar = %player_healthbar
@@ -32,8 +30,8 @@ func _ready() -> void:
 	current_soulbar = 0
 
 func _physics_process(delta: float) -> void:
-	var attack_direction = attack_joystick.get_direction()
-	var move_direction = move_joystick.get_direction()
+	var attack_direction = Input.get_vector("attack_left", "attack_right", "attack_up", "attack_down")
+	var move_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if knokback_velocity.length() > 1 :
 		velocity = knokback_velocity
 		move_and_slide()
